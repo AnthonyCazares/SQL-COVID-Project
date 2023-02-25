@@ -1,7 +1,7 @@
 /* 
-Preparacion de datos en Dataset de COVID-19
+Data preparation of Dataset COVID-19
 
-Skills utilizadas: Joins, CTE, Tablas temporales, Funciones de ventana, Funciones de agregacion, Creacion de vistas, ConversiÛn de tipos de datos
+Skills used: Joins, CTE, Tablas temporales, Funciones de ventana, Funciones de agregacion, Creacion de vistas, Conversi√≥n de tipos de datos
 
 */
 
@@ -84,7 +84,7 @@ Join SQLProyect..VacunasCovid vacuns
 where muerts.continent is not null 
 order by 2,3
 
--- Usando expreciones comunes de tabla(CTE) para realizar el c·lculo en el partition By del Query anterior
+-- Usando expreciones comunes de tabla(CTE) para realizar el c√°lculo en el partition By del Query anterior
 
 With PobvsVacun (Continent, Location, Date, Population, New_Vaccinations, SumContinuaPersonasVacunadas)
 as
